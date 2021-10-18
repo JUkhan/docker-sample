@@ -20,13 +20,21 @@ docker exec -it b5a01a0476e5 sh/zsh/bash/powershell
 Docker run -it busybox sh
 
 // a docker file
-FROM alpine
-RUN apk add —update redis
-CMD [ “redis-server” ]
+
+`FROM alpine`
+
+`RUN apk add —update redis`
+
+`CMD [ “redis-server” ]`
 
 // go to path docker file
+
 docker build .
-docker build -t <dockerid>/<imagename>:<version>
+
+docker build -t dockerid/imagename
+
 Docker run <container_id>
 
-Docker run <container_id | dockerid/imagename>
+Docker run <container_id | dockerid/imagename
+
+Docker run -p 8080:8080 <container_id | dockerid/imagename
