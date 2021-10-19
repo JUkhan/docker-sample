@@ -21,3 +21,17 @@
 `docker kill [container_id]` Forcefully killed without resource clean up
 
 `docker start -a [container_id]` Start a container
+
+`docker exec -it [container id] sh|zsh|bash|powershell`
+
+## Kubernetes
+
+`Kubbernets Cluster` A collections of nodes + a master to manage them.
+
+`Node` A virtual machine that will run our containers.
+
+`Pod` More or less a running container. Technically, a pod can run muitiple containers.
+
+`Deployment` Monitors a set of pods. make sure they are running and restarts thhem if they crash.
+
+`Service` Provides an easy-to-remember URL to access a running container.
