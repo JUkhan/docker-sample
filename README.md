@@ -24,6 +24,16 @@
 
 `docker exec -it [container id] sh|zsh|bash|powershell`
 
+`docker stop $(docker ps -aq)` stop all
+
+`docker rm container_id`
+
+`docker rm $(docker ps -aq)` remove all
+
+`docker rmi $(docker ps -aq)` remove all
+
+`docker-compose -f ./docker-compose.yml -f ./docker-compose.override.yml up -d`
+
 ## Kubernetes
 
 `Kubbernets Cluster` A collections of nodes + a master to manage them.
