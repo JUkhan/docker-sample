@@ -1,6 +1,6 @@
 ### Docker
 
-`docker build -t jasim101/posts` Build an image based on the dockerfile in the current directory. Tag it as `jasim101/posts`
+`docker build -t jasim101/sampleweb .` Build an image based on the dockerfile in the current directory. Tag it as `jasim101/posts`
 
 `docker run [image id or image tag]` Create and start a container based on the provided image id or tag.
 
