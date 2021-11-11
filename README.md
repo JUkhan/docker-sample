@@ -32,6 +32,16 @@
 
 `docker rmi $(docker ps -aq)` remove all
 
+`docker-cmpose up` run containers
+
+`docker-cmpose up --build` run and build containers
+
+`docker-cmpose up -d` launch in background
+
+`docker-cmpose down` stop containers
+
+`docker-cmpose ps` shows all containers in the docker-compose file
+
 `docker-compose -f ./docker-compose.yml -f ./docker-compose.override.yml up -d`
 
 ## Kubernetes
