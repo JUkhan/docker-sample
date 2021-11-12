@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    stdin_open: true
+    # if you are running docker on windows, you can use CHOKIDAR_USEPOLLING=true
+    # for broowser refresh autometically
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - '3000:3000'
+    # volumes: copy files from local path to container path
+    # /app/node_modules -> node_modules has no effect
+    volumes:
+      - /app/node_modules
+      - .:/app
